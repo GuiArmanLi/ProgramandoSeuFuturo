@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6bbd77e1-6c0f-4b0b-bed3-aff3185fd39d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/out/production/untitled/Heroi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/out/production/untitled/Inimigo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/out/production/untitled/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/out/production/untitled/Mapa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/src/Heroi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/src/Inimigo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/src/Mapa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lista03/untitled/untitled.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2Okjce2ej0PSE6kAZa7nRh6ztX1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6bbd77e1-6c0f-4b0b-bed3-aff3185fd39d" name="Changes" comment="" />
+      <created>1682111555883</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682111555883</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,23 @@
+body {
+    background-color: gainsboro;
+}
+
+ul li{
+    display: inline;
+    margin: 0px 10px;
+}
+
+div {
+    width: 350px;
+    border: 1px solid white;
+    background-color: antiquewhite;
+}
+
+div img {
+    background-color: white;
+    width: 100%;
+}
+
+h2, p {
+    text-align: center;
+}

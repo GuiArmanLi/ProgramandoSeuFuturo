@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Modulo 2/Lista 2/Lista 2.iml" filepath="$PROJECT_DIR$/Modulo 2/Lista 2/Lista 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Modulo 2/Lista 2.1/Lista 2.1.iml" filepath="$PROJECT_DIR$/Modulo 2/Lista 2.1/Lista 2.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Modulo 2/Lista 2.2/Lista 2.2.iml" filepath="$PROJECT_DIR$/Modulo 2/Lista 2.2/Lista 2.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Modulo 2/Lista 2.3/Lista 2.3.iml" filepath="$PROJECT_DIR$/Modulo 2/Lista 2.3/Lista 2.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Modulo 2/Lista 3/Lista 3.iml" filepath="$PROJECT_DIR$/Modulo 2/Lista 3/Lista 3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Modulo 2/Lista 3.1/Lista 3.1.iml" filepath="$PROJECT_DIR$/Modulo 2/Lista 3.1/Lista 3.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Modulo 2/Lista 3.2/Lista 3.2.iml" filepath="$PROJECT_DIR$/Modulo 2/Lista 3.2/Lista 3.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Modulo 2/Lista 3.3/Lista 3.3.iml" filepath="$PROJECT_DIR$/Modulo 2/Lista 3.3/Lista 3.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/portugol-java.iml" filepath="$PROJECT_DIR$/.idea/portugol-java.iml" />
+    </modules>
+  </component>
+</project>
