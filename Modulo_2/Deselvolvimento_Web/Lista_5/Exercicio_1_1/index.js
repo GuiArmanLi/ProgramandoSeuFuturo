@@ -31,9 +31,9 @@ let pessoas = [
     }   
 ]
 for(let i = 0; i < pessoas.length; i++){
-    if(admin == true){
-        console.log("Olá " + nome[i] + "! Bem vindo(a) você é admin do sistema, enviamos um email para " + nome[1] + " para você criar uma senha")
+    if(pessoas[i].admin == true){
+        console.log("Olá " + pessoas[i].nome + "! Bem vindo(a) você é admin do sistema, enviamos um email para " + pessoas[i].nome + " para você criar uma senha")
     }else {
-        console.log("Olá " + nome[i] + "! Bem vindo(a).")
+        console.log("Olá " + pessoas[i].nome + "! Bem vindo(a).")
     }
 }
