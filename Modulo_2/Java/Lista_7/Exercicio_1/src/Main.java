@@ -4,7 +4,8 @@ public class Main {
         Prensador prensador = new Prensador();
         Dobrador dobrador = new Dobrador();
         Cortador cortador = new Cortador();
-
-
+        prensador.produzir();
+        dobrador.produzir();
+        cortador.produzir();
     }
 }

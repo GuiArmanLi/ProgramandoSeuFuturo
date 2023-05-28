@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Fabrica {
     private int id;
@@ -41,5 +40,4 @@ public class Fabrica {
     public void setId(int id) {
         this.id = id;
     }
-
 }
