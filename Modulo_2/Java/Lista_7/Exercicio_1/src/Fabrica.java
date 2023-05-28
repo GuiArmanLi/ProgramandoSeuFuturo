@@ -1,36 +1,26 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Fabrica {
     private int id;
-    private ArrayList<Prensador> prensador = new ArrayList<>();
-    private ArrayList<Prensador> dobrador = new ArrayList<>();
-    private ArrayList<Prensador> cortador = new ArrayList<>();
 
-    public ArrayList<Prensador> getPrensador() {
-        return prensador;
+    private List<Operario> operarios;
+
+    public Fabrica(){
+        this.operarios = new ArrayList<>();
     }
 
-    public void setPrensador(ArrayList<Prensador> prensador) {
-        this.prensador = prensador;
+    public List<Operario> getOperarios() {
+        return operarios;
+    }
+    public void addOperarios(Operario operario){
+        this.operarios.add(operario);
     }
 
-    public ArrayList<Prensador> getDobrador() {
-        return dobrador;
-    }
-
-    public void setDobrador(ArrayList<Prensador> dobrador) {
-        this.dobrador = dobrador;
-    }
-
-    public ArrayList<Prensador> getCortador() {
-        return cortador;
-    }
-
-    public void setCortador(ArrayList<Prensador> cortador) {
-        this.cortador = cortador;
-    }
-
-    public Fabrica() {
+    public void escravizar(){
+        for (int i = 0; i < operarios.size(); i++) {
+            operarios.get(i).produzir();
+        }
     }
 
     public int getId() {
