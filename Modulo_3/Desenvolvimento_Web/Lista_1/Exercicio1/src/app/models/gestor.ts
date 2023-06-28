@@ -4,7 +4,7 @@ export default class Gestor implements Funcionario{
     nome: string;
     funcional: number;
     cargo: string;
-    nomeGestor: string[];
+    nomeSubordinado: string[];
 
     constructor(
                 nome: string,
@@ -15,6 +15,6 @@ export default class Gestor implements Funcionario{
     this.nome = nome;
     this.funcional = funcional;
     this.cargo = cargo;
-    this.nomeGestor = nomeSubordinado;
+    this.nomeSubordinado = nomeSubordinado;
 }
 }
