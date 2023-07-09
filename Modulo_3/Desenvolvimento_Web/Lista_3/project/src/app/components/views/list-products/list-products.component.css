@@ -1,0 +1,25 @@
+div.card {
+    display: inline-block;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 0px 0px 30px 30px;
+    margin: 25px;
+    overflow: hidden;
+}
+
+div.image-card {
+    overflow: auto;
+    width: 100%;
+}
+
+div.card-information{
+    background-color: #B8CCC9;
+    width: inherit;
+    padding: 20px;
+    border-radius: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div.card-information h1 {
+    color: white;
+}
