@@ -15,5 +15,6 @@ export class ListProductsComponent {
     this.suplements.push(new Suplement("Miguel", 3, false, "https://avatars.githubusercontent.com/u/57414379?v=4"))
     this.suplements.push(new Suplement("Paulo", 4, true, "https://avatars.githubusercontent.com/u/101016549?v=4"))
     this.suplements.push(new Suplement("Ryan", 5, true, "https://avatars.githubusercontent.com/u/124525502?v=4"))
+    this.suplements.push(new Suplement("gabriel",6,false,""))
   }
 }

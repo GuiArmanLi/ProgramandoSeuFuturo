@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
     background-color: #808080;
+}
+
+span.title {
+    font: italic;
 }

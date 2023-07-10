@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { PersonalPageComponent } from './components/views/personal-page/personal-page.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
@@ -14,7 +13,6 @@ import { ContactUsComponent } from './components/views/contact-us/contact-us.com
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     HomeComponent,
     PersonalPageComponent,
     FooterComponent,
