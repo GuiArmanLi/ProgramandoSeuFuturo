@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { LoginComponent } from './components/views/login/login.component';
 import { CadastroComponent } from './components/views/cadastro/cadastro.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { ProductsComponent } from './components/views/products/products.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     LoginComponent,
     CadastroComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

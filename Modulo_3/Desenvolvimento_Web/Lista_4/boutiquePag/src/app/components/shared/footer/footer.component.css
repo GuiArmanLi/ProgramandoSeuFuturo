@@ -1,0 +1,21 @@
+address {
+    display: flex;
+    flex-direction: row;
+}
+
+a:active, a:visited  {
+    color: red;
+}
+
+.heartquark {
+    width: 50%;
+    justify-content: center;
+}
+
+.contacts {
+    width: 25%;
+}
+
+.follow-us {
+    width: 25%;
+}

@@ -1,22 +1,24 @@
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
 
-@font-face {
-    font-family: "Bodoni";
-    src: url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap');
+a {
+    text-decoration: none;
 }
 
 :root {
     /*Colors*/
-    --color1: #FF5457;
-    --color2: #FF070A;
-    --color3: #CC0609;
-    --color4: #800406;
-    --color5: #802A2B;
+    --color1: #853D3F;
+    --color2: #FFA8AB;
+    --color3: #D17578;
+    --color4: #308546;
+    --color5: #75D18D;
     --color6: black;
     --color7: white;
 
     /*Fonts*/
-    --font1: "Bodoni";
-    --font2: ;
+    --font1: 'Bodoni Moda', serif;
+    --font2: 'Courier Prime', monospace;
 }
