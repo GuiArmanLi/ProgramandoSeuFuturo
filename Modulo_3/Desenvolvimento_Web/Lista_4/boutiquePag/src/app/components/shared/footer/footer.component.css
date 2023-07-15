@@ -1,6 +1,7 @@
 address {
     display: flex;
     flex-direction: row;
+    float: bottom;
 }
 
 li {
@@ -40,6 +41,7 @@ iframe {
 .contacts {
     padding: 25px 100px;
     width: 30%;
+    
 }
 
 .social-media li {
