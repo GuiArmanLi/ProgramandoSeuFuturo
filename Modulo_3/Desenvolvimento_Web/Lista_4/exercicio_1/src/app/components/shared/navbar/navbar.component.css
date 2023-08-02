@@ -1,0 +1,19 @@
+nav {
+    width: 80%;
+    background-color: white;
+    margin: auto;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding: 5px 15px;
+    border: 1px solid blueviolet;
+    border-radius: 25px;
+    margin: 0px 15px;
+}
