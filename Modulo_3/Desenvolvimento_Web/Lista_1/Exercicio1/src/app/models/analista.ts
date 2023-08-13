@@ -1,21 +1,21 @@
 import Funcionario  from "./funcionario";
-import Gestor from "./gestor";
 
 export default class Analista implements Funcionario{
     nome: string;
     funcional: number;
     cargo: string;
     nomeGestor: string;
+    nomeSubordinado: object[];
 
-    constructor(nome: string, funcional: number, cargo: string, nomeGestor: string){
-    this.nome = nome;
-    this.funcional = funcional;
-    this.cargo = cargo;
-    this.nomeGestor = nomeGestor;
+    constructor(nome: string,
+                funcional: number,
+                cargo: string,
+                nomeGestor: string,
+                nomeSubordinado: object[]){
+        this.nome = nome;
+        this.funcional = funcional;
+        this.cargo = cargo;
+        this.nomeGestor = nomeGestor;
+        this.nomeSubordinado = nomeSubordinado;
     }
-
-public analista: Analista[] = new Array<Analista>();
-public gestor: Gestor = new Gestor("Maria", 192076, "Gestora de TI", [])
-
-
 }

@@ -1,46 +1,59 @@
 header {
-    background-color: #B8CCC9;
+    background-color: #7EAA92;
     width: 100%;
-    position: fixed;
+    position: absolute;
 }
 
 h1 {
-    padding: 20px 5px 20px 50px;
+    padding: 20px 5px 10px 50px;
     color: white;
     font-family: 'Courier Prime', monospace;
 }
 
-div {
-    display: inline-block;
+.content {
+    display: flex;
+    flex-direction: row;
 }
 
-ul li a img {
-    width: 100%;
-    height: 100%;
+.content-title, .content-social {
+    width: 50%;
+}
+
+.content-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.content-social a {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 20px;
 }
 
 nav {
-    background-color: #73807E;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #9ED2BE;
     width: 100%;
 }
 
-ul li {
+nav a {
+    background-color: #FFD9B7;
+    padding: 10px;
     width: fit-content;
-}
-
-ul li a {
     text-decoration: none;
 }
 
-ul li {
-    display: inline-block;
-    background-color: #B8CCC9;
-    padding: 10px;
-    margin: 0px 10px;
+a:link, a:active, a:visited {
+    color: white;
 }
 
-ul li:hover{
+nav a:hover{
     background-color: white;
-    transition: 1s;
+    color: #FFD9B7;
+    transition: 0.5s;
 }
-

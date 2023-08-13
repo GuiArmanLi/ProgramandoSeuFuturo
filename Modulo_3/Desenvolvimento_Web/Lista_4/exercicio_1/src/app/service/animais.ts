@@ -1,19 +1,18 @@
-export class Animal {
-    id: number;
-    name: string;
-    raca: string;
-    peso: number;
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from "@angular/core";
+import { Observable } from 'rxjs';
+import { Animal } from '../model/animal';
 
-    constructor(id: number,
-                name: string,
-                raca: string,
-                peso: number){
-        this.id = id;
-        this.name = name;
-        this.peso = peso;
-        this.raca = raca;
+
+@Injectable ({
+    providedIn: 'root',
+})
+
+export class AnimalService {
+
+    constructor(private http: HttpClient) { }
+
+    buscarAnimais(): Observable<Animal[]> {
+        return this.http.get<Animal[]>("http://localhost:8000/listar-animais")
     }
 }
-
-Animal[] = new List<Animal>;
-

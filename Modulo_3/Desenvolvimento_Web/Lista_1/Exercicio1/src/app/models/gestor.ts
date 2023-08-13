@@ -1,20 +1,20 @@
+import analista from "./analista";
 import Funcionario  from "./funcionario";
 
 export default class Gestor implements Funcionario{
     nome: string;
     funcional: number;
     cargo: string;
-    nomeSubordinado: string[];
+    nomeSubordinado: object[];
 
     constructor(
                 nome: string,
                 funcional: number,
                 cargo: string,
-                nomeSubordinado: string[])
-{
-    this.nome = nome;
-    this.funcional = funcional;
-    this.cargo = cargo;
-    this.nomeSubordinado = nomeSubordinado;
-}
+                nomeSubordinado: analista[]){
+        this.nome = nome;
+        this.funcional = funcional;
+        this.cargo = cargo;
+        this.nomeSubordinado = nomeSubordinado;
+    }
 }

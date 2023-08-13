@@ -15,6 +15,6 @@ export class ListProductsComponent {
     this.suplements.push(new Suplement("Miguel", 3, false, "https://avatars.githubusercontent.com/u/57414379?v=4"))
     this.suplements.push(new Suplement("Paulo", 4, true, "https://avatars.githubusercontent.com/u/101016549?v=4"))
     this.suplements.push(new Suplement("Ryan", 5, true, "https://avatars.githubusercontent.com/u/124525502?v=4"))
-    this.suplements.push(new Suplement("gabriel",6,false,""))
+    this.suplements.push(new Suplement("gabriel",6,false,"https://media.licdn.com/dms/image/D4D03AQE8_liIrCPLPg/profile-displayphoto-shrink_800_800/0/1683509524869?e=1697068800&v=beta&t=HmAjUPssuD9hRbv1aiRdAuF3vOL4Z-XqjHVdiDVyPrU"))
   }
 }
