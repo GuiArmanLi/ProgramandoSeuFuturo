@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    background-color: #183D3D;
+}
+
+a {
+    width: 100px;
+    padding: 5px;
+    border-bottom: 2px solid #93B1A6;
+    margin: 10px;
+
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #93B1A6;
+    border-radius: 20px;
+    transition: ease 1s;
+}
+
+a:hover, a:active, a:visited {
+    color: black;
+}
