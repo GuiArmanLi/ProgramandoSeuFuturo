@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import Cosmetico from 'src/app/model/cosmetico';
 import { CosmeticoService } from 'src/app/service/cosmetico-service.service';
 
 @Component({
