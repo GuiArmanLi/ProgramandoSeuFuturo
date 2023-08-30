@@ -9,10 +9,11 @@ public class Cosmetico {
     public Cosmetico() {
     }
 
-    public Cosmetico(int id, String nome, double preco) {
+    public Cosmetico(int id, String nome, double preco, String image) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
+        this.image = image;
     }
 
     public int getId() {

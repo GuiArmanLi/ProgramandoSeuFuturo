@@ -8,6 +8,7 @@ import { HomeComponent } from './components/views/home/home.component';
 import { ListaCosmeticosComponent } from './components/common/lista-cosmeticos/lista-cosmeticos.component';
 import { ToolbarComponent } from './components/common/toolbar/toolbar.component';
 import { CadastroComponent } from './components/views/cadastro/cadastro.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CadastroComponent } from './components/views/cadastro/cadastro.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,12 +15,14 @@ a {
     background-color: white;
     text-decoration: none;
     text-align: center;
+
+    opacity: 0.6;
 }
 
 a:hover {
     background-color: #93B1A6;
-    border-radius: 20px;
-    transition: ease 1s;
+    opacity: 1;
+    transition: ease 0.3s;
 }
 
 a:hover, a:active, a:visited {
