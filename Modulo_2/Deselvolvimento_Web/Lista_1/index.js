@@ -1,7 +1,11 @@
-var nome = ["Guilherme","Kauan","Lucas","Paulo","Roberto"]
-var idade = [20, 20, 19, 21, 19]
+var pessoas = [
+    { name: "Guilherme", idade: 20 },
+    { name: "Gabriel", idade: 22 },
+    { name: "Lucas", idade: 23 },
+    { name: "Dulcinea", idade: 53 },
+    { name: "Cavalcante", idade: 20 }
+];
 
-for(var i = 0; i < 4; i++){
-    console.log(nome[i])
-    console.log(idade[i] + "\n")
+for (pessoa of pessoas) {
+    console.log("Name: " + pessoa.name + ", idade: " + pessoa.idade + ".");
 }
