@@ -32,6 +32,6 @@ var contaCorrente = {
 
 if(contaCorrente.exibirExtrato(contaCorrente.saldo - contaCorrente.faturaAtual > 0) == true){
     console.log("Voce possui saldo para pagar a fatura atual!")
-    console.log(contaCorrente.extrat)
+    console.log(contaCorrente.extrato)
 } else {
     console.log("Voce nao possui saldo suficiente para pagar a fatura, experimente pegar credito para conseguir pagar!\nVoce tem " + contaCorrente.creditoDisponivel + "para utlizar.")}

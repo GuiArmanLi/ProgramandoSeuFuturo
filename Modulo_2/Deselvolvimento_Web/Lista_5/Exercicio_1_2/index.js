@@ -22,14 +22,14 @@
         admin: true,
         email: "lucas@gmail.com"
     }
-    pessoa5 = {
+    let pessoa5 = {
         nome: "Kauan",
         idade: 20,
         admin: false,
         email: "kauan@gmail.com"
     }   
 
-let listaPessoas = [pessoa1, pessoa1, pessoa3, pessoa4, pessoa5]
+let listaPessoas = [pessoa1, pessoa2, pessoa3, pessoa4, pessoa5]
 
 for (let pessoa of listaPessoas) {
     console.log()

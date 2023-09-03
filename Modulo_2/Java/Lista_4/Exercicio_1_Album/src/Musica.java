@@ -3,12 +3,13 @@ public class Musica {
     private int duracaoEmSegundos;
     private int popularidade;
 
+    public Musica(){}
+
     public Musica(String nome, int popularidade, int duracao){
         this.nome = nome;
         this.popularidade = popularidade;
         this.duracaoEmSegundos = duracao;
     }
-    public Musica(){}
 
     public String getNome(){
         return this.nome;

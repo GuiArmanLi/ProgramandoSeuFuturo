@@ -29,4 +29,36 @@ public class Album {
         }
         return musicas.get(index);
     }
+
+    public Album (){}
+
+    public Album(String nome, String nomeArtista, ArrayList<Musica> musicas) {
+        this.nome = nome;
+        this.nomeArtista = nomeArtista;
+        this.musicas = musicas;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNomeArtista() {
+        return nomeArtista;
+    }
+
+    public void setNomeArtista(String nomeArtista) {
+        this.nomeArtista = nomeArtista;
+    }
+
+    public ArrayList<Musica> getMusicas() {
+        return musicas;
+    }
+
+    public void setMusicas(ArrayList<Musica> musicas) {
+        this.musicas = musicas;
+    }
 }

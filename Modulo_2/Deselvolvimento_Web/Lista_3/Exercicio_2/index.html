@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guilherme</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Banco de Dados de Filmes</title>
 </head>
+
 <body>
-    
+    <div class="formulario">
+        <input type="text" name="nomeDoFilmeFavorito" id="nomeDoFilmeFavorito" placeholder="Filme favorito">
+        <input type="number" name="anoDeLancemento" id="anoDeLancemento" placeholder="Ano de lançamento">
+        <input type="text" name="nomeDoProtagonista" id="nomeDoProtagonista" placeholder="Nome do protagonista">
+        <input type="submit" value="Enviar!" onclick="enviar()">
+    </div>
+    <script src="index.js"></script>
 </body>
-<script>
-    var nomeDoFilmeFavorito = prompt("Qual seu filme preferido?")
-    var anoDeLancemento = prompt("Qual o ano de lancamento?")
-    var nomeDoProtagonista = prompt("Qual o nome do protagonista?")
 
-    var filme = {nome: nomeDoFilmeFavorito, lancamento: anoDeLancemento, protagonista: nomeDoProtagonista}
-
-    var dataBase = []
-
-    dataBase.push(filme)
-
-    document.writeln(filme.nome, " foi lancado em " , filme.lancamento, ", onde ", filme.protagonista, " mostra sua história de vida!")
-</script>
 </html>

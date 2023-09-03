@@ -18,7 +18,7 @@ public class Main {
             numeroDeFlhos[i] = leia.nextInt();
 
             mediaSalario = mediaSalario + salario[i];
-            mediaNumeroDeFilhos = mediaNumeroDeFilhos + numeroDeFlhos[i];
+            mediaNumeroDeFilhos += numeroDeFlhos[i];
 
             if (maiorSalario < salario[i]) {
                 maiorSalario = salario[i];
