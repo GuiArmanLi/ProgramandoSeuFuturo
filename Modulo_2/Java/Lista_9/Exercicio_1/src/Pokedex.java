@@ -16,10 +16,8 @@ public class Pokedex {
         this.pokemons = pokemons;
     }
 
-    public adicionarPokemon(Pokemon pokemon){
+    public void adicionarPokemon(Pokemon pokemon) {
         getPokemons();
-        
     };
-
 
 }
