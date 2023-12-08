@@ -1,6 +1,6 @@
 programa
 {
-	funcao inteiro maiorValor(inteiro vetor[]){
+	funcao inteiro maiorValor(inteiro vetor[]){
 		inteiro resultado = 0
 		para(inteiro i = 0; i < 10; i++){
 			se(vetor[i] > resultado){
@@ -23,7 +23,7 @@ programa
 	funcao inteiro somatoriaDosValores(inteiro vetor[]){
 		inteiro resultado = 0
 		para(inteiro i = 0; i < 10; i++){
-			resultado = resultado + vetor[i]
+			resultado += vetor[i]
 		}
 		retorne resultado
 	}
@@ -31,7 +31,7 @@ programa
 	funcao inteiro mediaDosValores(inteiro vetor[]){
 		inteiro resultado = 0
 		para(inteiro i = 0; i < 10; i++){
-			resultado = resultado + vetor[i]
+			resultado += vetor[i]
 		}
 		retorne resultado / 10
 	}
@@ -62,9 +62,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 275; 
+ * @POSICAO-CURSOR = 868; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {vetor, 42, 10, 5};
+ * @SIMBOLOS-INSPECIONADOS = {vetor, 3, 35, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

@@ -8,7 +8,7 @@ programa
          leia(nome)
          limpa()
 
-         escreva("Qual é seu sobrenome " + nome + "?")
+         escreva("Qual é seu sobrenome " + nome + "? ")
          leia(s_nome)
          limpa()
 
@@ -20,7 +20,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 140; 
+ * @POSICAO-CURSOR = 307; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

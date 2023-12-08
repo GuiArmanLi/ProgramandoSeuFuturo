@@ -1,9 +1,10 @@
 programa
-{
+{
 	funcao inicio()
 	{
 		inteiro numeros[10]
-
+		
+		escreva("Digite 10 numeros\n")
 		para(inteiro i = 0; i < 10; i++){
 			leia(numeros[i])
 			limpa()
@@ -24,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 294; 
+ * @POSICAO-CURSOR = 88; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

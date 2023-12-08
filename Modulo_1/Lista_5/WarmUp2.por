@@ -9,10 +9,10 @@ programa
 			para(inteiro j = 0; j < linha; j++){
 				leia(matriz[i][j])
 				se(j % 2 == 0){
-					matriz[i][j] = matriz[i][j] * 2
+					matriz[i][j] *= 2
 				}
 				se(j % 2 == 1){
-					matriz[i][j] = matriz[i][j] * 3
+					matriz[i][j] *= 3
 				}
 			}
 		}
@@ -30,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 31; 
+ * @POSICAO-CURSOR = 294; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {matriz, 6, 10, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

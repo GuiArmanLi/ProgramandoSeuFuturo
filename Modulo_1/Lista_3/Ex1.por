@@ -24,33 +24,33 @@ programa
 		
 			se(opcao1 == 1){
 				se (opcao2 == 1){
-					escreva("Empate! \n")
+					escreva("Empate! \n2")
 				}
 				senao se(opcao2 == 2){
-					pontuacaoJogador2 = pontuacaoJogador2 ++
+					pontuacaoJogador2++
 				}
 				senao se(opcao2 == 3){
-					pontuacaoJogador1 = pontuacaoJogador1 ++
+					pontuacaoJogador1++
 				}
 			}
 			se(opcao1 == 2){
 				se (opcao2 == 1){
-					pontuacaoJogador1 = pontuacaoJogador1 ++
+					pontuacaoJogador1++
 				}
 				senao se(opcao2 == 2){
 					escreva("Empate! \n")
 				}
 				senao se(opcao2 == 3){
-					pontuacaoJogador2 = pontuacaoJogador2 ++
+					pontuacaoJogador2++
 				}
 			}
 			se(opcao1 == 3){
 				se (opcao2 == 1){
-					pontuacaoJogador2 = pontuacaoJogador2 ++
+					pontuacaoJogador2++
 				}
 		
 				senao se(opcao2 == 2){
-					pontuacaoJogador1 = pontuacaoJogador1 ++
+					pontuacaoJogador1++
 				}
 		
 				senao se(opcao2 == 3){
@@ -61,6 +61,7 @@ programa
 				pare
 			}
 		}
+		
 		limpa()
 		se (pontuacaoJogador1 == rodadas){
 		escreva("O jogador " + jogador1 + " venceu\n")
@@ -75,7 +76,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 671; 
+ * @POSICAO-CURSOR = 1289; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

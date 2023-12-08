@@ -6,11 +6,11 @@ programa
 		inteiro totalDeValores = 0
 		
 		para (inteiro i = 0; numero >= 0 ; i++){
-			escreva("Digite os valores que dese somar!\t")
+			escreva("Digite os valores que deve somar!\t Numeros negativos finalizam as somas\n")
 			leia(numero)
 			
 			se (numero >= 0){
-			somatorio = somatorio + numero
+			somatorio += numero
 			}
 			
 			mediaDoSomatorio = somatorio / i
@@ -26,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 532; 
+ * @POSICAO-CURSOR = 242; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
