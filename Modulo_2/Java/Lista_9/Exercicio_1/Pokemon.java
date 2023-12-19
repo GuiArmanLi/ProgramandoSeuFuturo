@@ -37,6 +37,6 @@ public class Pokemon {
 
     @Override
     public String toString() {
-        return "Pokemon [codigoIdentificador=" + codigoIdentificador + ", nome=" + nome + ", tipo=" + tipo + "]";
+        return "Pokemon [codigoIdentificador=" + codigoIdentificador + ", nome=" + nome + ", tipo=" + tipo + "]\n";
     }
 }

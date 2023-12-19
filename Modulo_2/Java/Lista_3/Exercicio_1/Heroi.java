@@ -7,7 +7,8 @@ public class Heroi {
     public Heroi() {
     }
 
-    public Heroi(int defesa, int vida, int pontos) {
+    public Heroi(int ataque, int defesa, int vida, int pontos) {
+        this.ataque = ataque;
         this.defesa = defesa;
         this.vida = vida;
         this.pontos = pontos;

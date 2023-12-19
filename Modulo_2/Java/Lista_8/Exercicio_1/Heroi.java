@@ -1,7 +1,6 @@
 import java.util.UUID;
 
 public class Heroi {
-
     private UUID id;
     private String nome;
     private Arma arma;
@@ -40,4 +39,8 @@ public class Heroi {
     public String toString() {
         return "Heroi [id=" + id + ", nome=" + nome + ", arma=" + arma + "]";
     }
+}
+
+enum Arma {
+    ESPADA, LANCA, MACHADO;
 }

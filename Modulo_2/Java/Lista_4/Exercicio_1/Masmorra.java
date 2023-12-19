@@ -1,14 +1,19 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Masmorra {
     private String nome;
     private Ranks rank;
-    Heroi heroi;
+    List<Heroi> herois;
 
     public Masmorra() {
+        this.herois = new ArrayList<>();
     }
 
     public Masmorra(String nome, Ranks rank) {
         this.nome = nome;
         this.rank = rank;
+        this.herois = new ArrayList<>();
     }
 
     public String getNome() {
@@ -27,15 +32,25 @@ public class Masmorra {
         this.rank = rank;
     }
 
-    public Heroi getHeroi() {
-        return heroi;
+    public List<Heroi> getHerois() {
+        return herois;
     }
 
-    public void setHeroi(Heroi heroi) {
-        this.heroi = heroi;
+    public void setHerois(List<Heroi> herois) {
+        this.herois = herois;
     }
 }
 
 enum Ranks {
-    C, B, A, S
+    C(1), B(2), A(3), S(4);
+
+    private int value;
+
+    Ranks(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
 }

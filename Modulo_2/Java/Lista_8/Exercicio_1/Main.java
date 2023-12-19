@@ -3,15 +3,14 @@ public class Main {
         Grupo grupo = new Grupo();
 
         try {
-            grupo.adicionarHeroi(new Heroi("Lyn", Arma.ESPADA));
+            grupo.adicionarHeroi(new Heroi("Cavalcante", Arma.ESPADA));
+            grupo.adicionarHeroi(new Heroi("Guilherme", Arma.LANCA));
+            grupo.adicionarHeroi(new Heroi("Paulo", Arma.MACHADO));
+            grupo.adicionarHeroi(new Heroi("Kauan", Arma.LANCA));
+            
+            System.out.println(grupo);
 
-            grupo.adicionarHeroi(new Heroi("Marcus", Arma.LANCA));
-
-            grupo.adicionarHeroi(new Heroi("Dorcas", Arma.MACHADO));
-
-            grupo.adicionarHeroi(new Heroi("Marcus", Arma.LANCA));
-            System.out.println(grupo.getHerois());
-
+            grupo.adicionarHeroi(new Heroi("Kauan", Arma.LANCA));
         } catch (NomeRepetidoException error) {
             System.out.println(error.getMessage());
         }

@@ -10,11 +10,13 @@ public class Grupo {
     }
 
     public int getTotalDeMoedas() {
-        return totalDeMoedas;
-    }
+        this.totalDeMoedas = 0;
 
-    public void setTotalDeMoedas(int totalDeMoedas) {
-        this.totalDeMoedas = totalDeMoedas;
+        for (Heroi heroi : herois) {
+            this.totalDeMoedas += heroi.getQuantidadeMoedasDeOuro();
+        }
+
+        return totalDeMoedas;
     }
 
     public List<Heroi> getHerois() {
@@ -25,25 +27,22 @@ public class Grupo {
         this.herois = herois;
     }
 
-    public String adicionarHeroi(Heroi heroi) {
+    public String recrutar(Heroi heroi) {
         for (Heroi i : herois) {
             if (heroi.getId().equals(i.getId())) {
-                return "Erro!";
+                return "O herói já está no grupo!";
             }
         }
 
         this.herois.add(heroi);
-        this.totalDeMoedas += heroi.getQuantidadeMoedasDeOuro();
-        return "Sucesso!";
+        return "Heroi " + heroi.getNome() + " foi adicionado ao grupo!";
     }
 
-    public String removerHeroi(Heroi heroi) {
-        for (Heroi h : herois) {
-            if (h.getId().equals(heroi.getId())) {
-                this.totalDeMoedas -= heroi.getQuantidadeMoedasDeOuro();
-
+    public String removerHeroi(Heroi iHeroi) {
+        for (Heroi heroi : herois) {
+            if (heroi.getId().equals(iHeroi.getId())) {
                 herois.remove(heroi);
-                return "Sucesso!";
+                return "Heroi " + iHeroi.getNome() + " foi removido do grupo!";
             }
         }
         return "Erro!";

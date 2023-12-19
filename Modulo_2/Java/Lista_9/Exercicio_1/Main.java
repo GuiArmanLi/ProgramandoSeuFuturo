@@ -6,8 +6,6 @@ public class Main {
         pokedex.adicionarPokemon(new Pokemon("charmaralho", "fogo"));
         pokedex.adicionarPokemon(new Pokemon("bulbadao", "agua"));
 
-        for (Pokemon pokemon : pokedex.getPokemons().values()) {
-            System.out.println(pokemon);
-        }
+        System.out.println(pokedex);
     }
 }

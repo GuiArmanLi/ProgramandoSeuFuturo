@@ -20,8 +20,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
 
-        String resultado = categoria(leia.nextInt());
-        System.out.println("Categoria " + resultado);
+        String categoria = categoria(leia.nextInt());
+        System.out.println("Categoria: " + categoria);
 
         leia.close();
     }

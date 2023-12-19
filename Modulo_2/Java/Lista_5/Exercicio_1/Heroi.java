@@ -1,7 +1,6 @@
 import java.util.UUID;
 
 public class Heroi {
-
     private UUID id;
     private String nome;
     private int quantidadeMoedasDeOuro;
