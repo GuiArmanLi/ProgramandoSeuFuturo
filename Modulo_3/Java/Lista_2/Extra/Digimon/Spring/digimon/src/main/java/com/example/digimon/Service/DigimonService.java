@@ -1,4 +1,4 @@
-package com.example.digimon.Service;
+package com.example.digimon.service;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,8 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-import com.example.digimon.Model.Digimon;
-import com.fasterxml.jackson.core.JsonProcessingException;
+import com.example.digimon.model.Digimon;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -25,7 +24,7 @@ public class DigimonService {
     public List<Digimon> getAll() {
         String response = getDigimons();
 
-        responseToFile(response);
+        writeResponseToFile(response);
 
         return fileToListDigimons();
     }
@@ -35,9 +34,8 @@ public class DigimonService {
         return rt.getForEntity(PATH_URL, String.class).getBody();
     }
 
-    private void responseToFile(String response) {
+    private void writeResponseToFile(String response) {
         Path path = Path.of(PATH_FILE);
-
         if (!Files.exists(path)) {
             createFile(path);
         }
@@ -45,7 +43,7 @@ public class DigimonService {
         try (FileWriter fw = new FileWriter(path.toFile())) {
             fw.write(response);
         } catch (IOException error) {
-            Logger.getLogger(error.getMessage());
+            Logger.getLogger("Logger").warning(error.getMessage());
         }
     }
 
@@ -53,7 +51,7 @@ public class DigimonService {
         try {
             Files.createFile(path);
         } catch (IOException error) {
-            Logger.getLogger(error.getMessage());
+            Logger.getLogger("Logger").warning(error.getMessage());
         }
     }
 
@@ -63,15 +61,12 @@ public class DigimonService {
             return om.readValue(Path.of(PATH_FILE).toFile(),
                     new TypeReference<List<Digimon>>() {
                     });
-
         } catch (RestClientException error) {
             Logger.getLogger(error.getMessage());
-        } catch (JsonProcessingException error) {
-            Logger.getLogger(error.getMessage());
         } catch (IOException error) {
-            Logger.getLogger(error.getMessage());
+            Logger.getLogger("Logger").warning(error.getMessage());
         }
-
+        
         return Collections.emptyList();
     }
 }

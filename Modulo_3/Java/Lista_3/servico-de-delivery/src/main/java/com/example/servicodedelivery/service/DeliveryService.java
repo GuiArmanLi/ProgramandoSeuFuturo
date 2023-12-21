@@ -1,8 +1,7 @@
 package com.example.servicodedelivery.service;
 
-import com.example.servicodedelivery.envio.EnvioViaDrone;
 import com.example.servicodedelivery.envio.FormaDeEnvio;
-import com.example.servicodedelivery.model.Produto;
+import com.example.servicodedelivery.model.ProdutoModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -10,10 +9,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class DeliveryService {
     @Autowired
-    @Qualifier("EnvioViaMoto")
+    @Qualifier("ViaMoto")
     private FormaDeEnvio formaDeEnvio;
 
-    public String enviar(Produto produto){
-        return formaDeEnvio.enviar(produto);
+    public void enviar(ProdutoModel produto) {
+        this.formaDeEnvio.enviar(produto);
     }
 }

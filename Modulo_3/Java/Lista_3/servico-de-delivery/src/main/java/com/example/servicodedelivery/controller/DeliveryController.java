@@ -1,6 +1,6 @@
 package com.example.servicodedelivery.controller;
 
-import com.example.servicodedelivery.model.Produto;
+import com.example.servicodedelivery.model.ProdutoModel;
 import com.example.servicodedelivery.service.DeliveryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,8 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class DeliveryController {
     @Autowired
     private DeliveryService deliveryService;
+
     @PostMapping
-    public String enviarProduto(@RequestBody Produto produto){
-        return deliveryService.enviar(produto);
+    public void enviarProduto(@RequestBody ProdutoModel produto) {
+        this.deliveryService.enviar(produto);
     }
 }

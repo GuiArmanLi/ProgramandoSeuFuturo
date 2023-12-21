@@ -26,14 +26,14 @@ public class Main {
     private static void getAll() {
         String request = getResquest();
         if (request == null) {
-            Logger.getLogger("Erro!");
+            Logger.getLogger("Logger").warning("Erro!");
         }
-        // Daqui pra baixo sao apenas testes
+
         requestToFile(request);
-        
-        List<Digimon> digimons = fileToListObject();
+
+        List<Digimon> digimons = fileToListDigimons();
         for (Digimon digimon : digimons) {
-            System.out.println("Nome: " + digimon.getName() + ", Level: " + digimon.getLevel());
+            Logger.getLogger("Logger").info("Nome: " + digimon.getName() + ", Level: " + digimon.getLevel());
         }
     }
 
@@ -57,41 +57,41 @@ public class Main {
                 return response.toString();
             }
         } catch (IOException error) {
-            Logger.getLogger(error.getMessage());
+            Logger.getLogger("Logger").warning(error.getMessage());
         }
+
         return null;
     }
 
     private static void requestToFile(String request) {
         Path path = Path.of(PATH_FILE);
-
         if (!Files.exists(path)) {
             try {
                 Files.createFile(path);
             } catch (IOException error) {
-                Logger.getLogger(error.getMessage());
+                Logger.getLogger("Logger").warning(error.getMessage());
             }
         }
 
-        try (FileWriter fileWriter = new FileWriter(path.toFile())) {
-            fileWriter.append(request);
+        try (FileWriter fw = new FileWriter(path.toFile())) {
+            fw.append(request);
         } catch (IOException error) {
-            Logger.getLogger(error.getMessage());
+            Logger.getLogger("Logger").warning(error.getMessage());
         }
     }
 
-    private static List<Digimon> fileToListObject() {
+    private static List<Digimon> fileToListDigimons() {
         List<Digimon> digimons = null;
+
         try {
             ObjectMapper objectMapper = new ObjectMapper();
-
             digimons = objectMapper.readValue(Path.of(PATH_FILE).toFile(),
                     new TypeReference<List<Digimon>>() {
                     });
-
         } catch (IOException error) {
-            Logger.getLogger(error.getMessage());
+            Logger.getLogger("Logger").warning(error.getMessage());
         }
+
         return digimons;
     }
 }

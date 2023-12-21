@@ -1,48 +1,48 @@
 package com.example.ecommerce.services;
 
-import com.example.ecommerce.model.Cosmetico;
-import com.example.ecommerce.repository.BancoDeDados;
+import com.example.ecommerce.db.ProdutosBD;
+import com.example.ecommerce.model.CosmeticoModel;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 @Component
 public class CosmeticosService {
     @Autowired
-    BancoDeDados bancoDeDados;
+    ProdutosBD produtos;
 
-    public List<Cosmetico> getAllProducts(){
-
-        return bancoDeDados.findAll();
+    public List<CosmeticoModel> getAllProducts() {
+        return this.produtos.findAll();
     }
 
-    public Cosmetico getById(int id){
-        for (Cosmetico cosmetico : bancoDeDados.findAll()){
-            if (cosmetico.getId() == id){
+    public CosmeticoModel getByNome(String nome) {
+        for (CosmeticoModel cosmetico : this.produtos.findAll()) {
+            if (cosmetico.getNome().equalsIgnoreCase(nome)) {
                 return cosmetico;
             }
         }
         return null;
     }
 
-    public String postProduct(Cosmetico cosmetico){
-        for (Cosmetico cosmetica : bancoDeDados.findAll()){
-            if (cosmetico.getId() == cosmetica.getId()){
-                return "Produto ja existente no banco del dados!";
+    public void adicionarProduto(CosmeticoModel newCosmetico) {
+        for (CosmeticoModel cosmetico : this.produtos.findAll()) {
+            if (newCosmetico.getId() == cosmetico.getId()) {
+                Logger.getLogger("Logger").info("Produto ja existente no banco del dados!");
+                return;
             }
         }
-        bancoDeDados.postProduct(cosmetico);
-        return "Produto cadastrado com sucesso!";
+        this.produtos.adicionar(newCosmetico);
     }
 
-    public String deleteProduct(int id){
-        for (Cosmetico cosmetico : bancoDeDados.findAll()){
-            if (cosmetico.getId() == id){
-                bancoDeDados.delete(cosmetico);
-                return "Produto deletado com sucesso!";
+    public void deletarProduto(String nome) {
+        for (CosmeticoModel cosmetico : this.produtos.findAll()) {
+            if (cosmetico.getNome().equalsIgnoreCase(nome)) {
+                this.produtos.deletar(cosmetico);
             }
         }
-        return "Produto nao consta en el banco del dados!";
+        Logger.getLogger("Logger").info("Produto nao consta en el banco del dados!");
     }
 }

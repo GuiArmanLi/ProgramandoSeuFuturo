@@ -1,4 +1,4 @@
-package com.example.digimon.Controller;
+package com.example.digimon.controller;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.digimon.Model.Digimon;
-import com.example.digimon.Service.DigimonService;
+import com.example.digimon.model.Digimon;
+import com.example.digimon.service.DigimonService;
 
 @RestController
 @RequestMapping("/digimons")

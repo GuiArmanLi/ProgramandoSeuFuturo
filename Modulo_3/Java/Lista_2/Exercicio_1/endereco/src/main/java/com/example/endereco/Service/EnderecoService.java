@@ -1,20 +1,30 @@
-package com.example.endereco.Service;
-import com.example.endereco.Model.Endereco;
-import com.example.endereco.Repository.BancoDeDados;
-import org.springframework.beans.factory.annotation.Autowired;
+package com.example.endereco.service;
+
+import com.example.endereco.model.Endereco;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.logging.Logger;
+
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestClientException;
+import org.springframework.web.client.RestTemplate;
 
 @Service
 public class EnderecoService {
-    @Autowired
-    BancoDeDados enderecos;
+    public ResponseEntity<Endereco> findByCep(String cep) {
+        RestTemplate rt = new RestTemplate();
+        ResponseEntity<Endereco> endereco = null;
 
-    public Endereco findByCep (String cep){
-        for (Endereco endereco : enderecos.findAll()){
-            if(cep.equals(endereco.cep)){
-                return endereco;
-            }
+        try {
+            URI path = new URI("https://viacep.com.br/ws/" + cep + "/json/");
+            endereco = rt.getForEntity(path, Endereco.class);
+
+        } catch (RestClientException | URISyntaxException error) {
+            Logger.getLogger("Logger").warning(error.getMessage());
         }
-        return null;
+
+        return endereco;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.digimon.Model;
+package com.example.digimon.model;
 
 public class Digimon {
     private String name;

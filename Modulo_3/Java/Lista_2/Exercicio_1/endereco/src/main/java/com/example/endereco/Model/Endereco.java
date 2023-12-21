@@ -1,4 +1,4 @@
-package com.example.endereco.Model;
+package com.example.endereco.model;
 
 import org.springframework.stereotype.Component;
 
