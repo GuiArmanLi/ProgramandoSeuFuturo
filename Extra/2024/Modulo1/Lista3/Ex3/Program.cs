@@ -18,12 +18,26 @@ class Program
             if (username == "admin" && password == "123senha")
             {
                 Console.WriteLine("Login realizado com sucesso");
-                break;
             }
-            else if (contador == 2)
+            else
             {
-                Console.WriteLine("Conta bloqueada!");
-                break;
+                if (contador == 2)
+                {
+                    Console.WriteLine("Conta bloqueada!");
+                    break;
+                }
+                else if (username != "admin" && password != "123senha")
+                {
+                    Console.WriteLine("Usuario e senha incorreto");
+                }
+                else if (username != "admin")
+                {
+                    Console.WriteLine("Usuario incorreto");
+                }
+                else
+                {
+                    Console.WriteLine("Senha incorreto");
+                }
             }
             contador++;
         } while (username != "admin" && password != "123senha");
