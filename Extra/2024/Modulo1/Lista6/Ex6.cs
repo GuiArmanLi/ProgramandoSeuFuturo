@@ -1,5 +1,4 @@
 using System;
-
 class Ex6
 {
     static void Main(string[] args)
@@ -88,7 +87,7 @@ class Ex6
                 {
                     for (int j = 0; j < matriz.GetLength(1); j++)
                     {
-                        if (j == 2)
+                        if (i == 2)
                         {
                             soma += matriz[i, j];
                         }
@@ -99,10 +98,8 @@ class Ex6
                 break;
 
             default:
-                Console.WriteLine("Opcap invalida!");
+                Console.WriteLine("Opcao invalida!");
                 break;
         }
-
-
     }
 }
