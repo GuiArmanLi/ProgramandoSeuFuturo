@@ -87,7 +87,7 @@ class Ex6
                 {
                     for (int j = 0; j < matriz.GetLength(1); j++)
                     {
-                        if (i == 2)
+                        if (i == 1 && j % 2 == 0)
                         {
                             soma += matriz[i, j];
                         }
